@@ -13,7 +13,7 @@ export default function Navbar() {
       <div className="px-2 flex justify-between items-center w-full h-full">
         <div className="flex items-center">
           <h1 className="text-3xl font-bold mr-4 sm:text-4xl">BRAND.</h1>
-          <ul className="hidden md:flex">
+          <ul className="hidden md:flex cursor-pointer">
             <li>
               <Link to="home" smooth={true} duration={500}>
                 Home
@@ -47,12 +47,12 @@ export default function Navbar() {
           </button>
           <button className="px-8 py-3">Sign Up</button>
         </div>
-        <div className="md:hidden mr-4 " onClick={handleClick}>
+        <div className="md:hidden mr-4 cursor-pointer " onClick={handleClick}>
           {!nav ? <AiOutlineMenu /> : <MdOutlineClose />}
         </div>
       </div>
 
-      <ul className={!nav ? "hidden" : "absolute bg-zinc-200 w-full px-8"}>
+      <ul className={!nav ? "hidden" : "absolute bg-zinc-200 w-full px-8 cursor-pointer"}>
         <li className="border-b-2 border-zinc-300 w-full">
           <Link onClick={handleClose} to="home" smooth={true} duration={500}>
             Home
