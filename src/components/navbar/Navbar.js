@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { MdOutlineClose } from "react-icons/md";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 export default function Navbar() {
   const [nav, setNav] = useState(false);
